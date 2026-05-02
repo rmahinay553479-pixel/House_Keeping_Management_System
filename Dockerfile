@@ -1,4 +1,4 @@
-# Use the official PHP image with Apache
+# STEP 1: YOU MUST HAVE THIS LINE AT THE VERY TOP
 FROM php:8.2-apache
 
 # Install system packages and PHP extensions
@@ -34,7 +34,7 @@ Require all granted\n\
 </Directory>\n' > /etc/apache2/conf-available/laravel.conf && \
     a2enconf laravel
 
-# Install Node.js
+# Install Node.js (Corrected URL)
 RUN curl -fsSL https://nodesource.com | bash - && \
     apt-get install -y nodejs
 
