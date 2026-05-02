@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libpng-dev \
     zip \
-    && docker-php-ext-install pdo pdo_mysql pdo_pgsql zip mbstring \
+    && docker-php-ext-install pdo pdo_mysql pdo_pgsql zip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
