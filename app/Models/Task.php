@@ -29,6 +29,11 @@ class Task extends Model
         'updated_at' => 'datetime',
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'assigned_to');
+    }
+
     public function assignee()
     {
         return $this->belongsTo(User::class, 'assigned_to');

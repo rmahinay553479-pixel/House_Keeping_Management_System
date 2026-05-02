@@ -112,7 +112,7 @@ class SupervisorController extends Controller
             'description' => 'required|string',
             'assigned_to' => 'required|exists:users,id',
             'priority' => 'required|in:low,medium,high',
-            'due_date' => 'required|date|after:today',
+            'scheduled_date' => 'required|date|after_or_equal:today',
             'location' => 'nullable|string|max:255',
         ]);
 

@@ -250,8 +250,8 @@
                 <div class="row">
                     <div>
                         <label class="form-label">Due Date</label>
-                        <input type="date" name="due_date" class="form-control @error('due_date') is-invalid @enderror" value="{{ old('due_date') }}" required>
-                        @error('due_date')<div class="error-message">{{ $message }}</div>@enderror
+                        <input type="date" name="scheduled_date" class="form-control @error('scheduled_date') is-invalid @enderror" value="{{ old('scheduled_date') }}" required>
+                        @error('scheduled_date')<div class="error-message">{{ $message }}</div>@enderror
                     </div>
 
                     <div>

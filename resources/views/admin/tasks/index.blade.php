@@ -221,7 +221,6 @@
 
             <div class="header-section">
                 <h1>Task Management</h1>
-                <a href="{{ route('admin.tasks.create') }}" class="btn btn-add">+ Create Task</a>
             </div>
 
             @if(session('success'))
@@ -304,7 +303,7 @@
                     </tr>
                     @empty
                     <tr>
-                        <td colspan="6" style="text-align: center;">No tasks found. <a href="{{ route('admin.tasks.create') }}">Create one</a></td>
+                        <td colspan="6" style="text-align: center;">No tasks found.</td>
                     </tr>
                     @endforelse
                 </tbody>
