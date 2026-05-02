@@ -1,4 +1,4 @@
-# Step 1: Use the official PHP Apache image
+# Use the official PHP image with Apache
 FROM php:8.2-apache
 
 # Install system packages and PHP extensions
