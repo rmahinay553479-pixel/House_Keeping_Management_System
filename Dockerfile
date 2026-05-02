@@ -34,9 +34,10 @@ Require all granted\n\
 </Directory>\n' > /etc/apache2/conf-available/laravel.conf && \
     a2enconf laravel
 
-# Install Node.js (Corrected URL)
+# Replace your current Node.js section with this:
 RUN curl -fsSL https://nodesource.com | bash - && \
     apt-get install -y nodejs
+
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
