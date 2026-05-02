@@ -11,6 +11,10 @@ use App\Http\Controllers\HousekeeperController;
 
 // Welcome route - redirect authenticated users to their dashboard
 Route::get('/', function () {
+    return redirect('/products');    
+});
+
+Route::get('/', function () {
     if (session()->has('authenticated')) {
         $user = session('user');
         switch ($user['role']) {
