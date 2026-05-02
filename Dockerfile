@@ -34,9 +34,9 @@ Require all granted\n\
 </Directory>\n' > /etc/apache2/conf-available/laravel.conf && \
     a2enconf laravel
 
-# Replace lines 36-37 with this:
-RUN curl -fsSL https://nodesource.com | bash - && \
-    apt-get install -y nodejs
+# MAS SIMPLE AT SIGURADONG GAGANA:
+RUN apt-get update && apt-get install -y nodejs npm
+
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
